@@ -1,0 +1,377 @@
+body	{
+		background:url(../images/back-grid.jpg) fixed;
+		width: 100%;
+		}
+h1		{
+		text-align: center;
+		font-size: 40pt;
+		height: 72px;
+		margin-bottom: 0px;
+		color: #3b8454;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 100%;
+		}
+.titleLeft		{
+		font-size: 25pt;
+		height: 72px;
+		margin-bottom: 0px;
+		color: #3b8454;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 100%;
+		}
+.readTextLeft	{
+		color: #3cb878;
+		margin-bottom: -20px;
+		margin-top: 15px;
+		font-style: initial;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 17pt;
+		}
+.titleCenter		{
+		font-size: 25pt;
+		height: 72px;
+		margin-bottom: 0px;
+		color: #3b8454;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 100%;
+		text-align: center;
+		}
+.readTextCenter	{
+		color: #3cb878;
+		margin-bottom: -20px;
+		margin-top: 15px;
+		font-style: initial;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 17pt;
+		text-align: center;
+		}
+.norm		{
+		color: #3cb878;
+		margin-bottom: -20px;
+		margin-top: 265px;
+		font-style: initial;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 17pt;
+		text-align: center;
+		}
+#map	{
+		position: fixed;
+		background:url(../images/asset-map.png) no-repeat 0px 390px;
+		margin-left: -8px;
+		margin-top: -8px;
+		width: 100%;
+		height: 1590px;
+		z-index: 2;
+		}
+#mapTwo	{
+		position: absolute;
+		background:url(../images/asset-map.png) no-repeat 0px 390px;
+		margin-left: -8px;
+		margin-top: -8px;
+		width: 0px;
+		height: 9000px;
+		z-index: 2;
+		}
+#screen	{
+		position: fixed;
+		background:url(../images/top-screen.png);
+		margin-left: -8px;
+		margin-top: -8px;
+		width: 100%;
+		height: 797px;
+		z-index: 3;
+		}
+#opening	{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		z-index: 4;
+		}
+#navButton	{
+		position: fixed;
+		background:url(../images/button-menu.png) no-repeat;
+		right: 0;
+		Width: 117px;
+		height: 106px;
+		z-index: 4;
+		}
+#mapMenu	{
+		position: fixed;
+		background:url(../images/menu-map.png) no-repeat;
+		margin-top: -8px;
+		margin-left: -467px;
+		width: 467px;
+		height: 797px;
+		z-index: 6;
+		}
+#scrollDown	{
+		position: absolute;
+		background:url(../images/button-down.png) no-repeat;
+		width: 130px;
+		height: 125px;
+		top: 600px;
+		left: 50%;
+		margin-left: -65px;
+		bottom: 20px;
+		z-index: 4;
+		}
+#logo	{
+		position: fixed;
+		background:url(../images/logo.png) no-repeat;
+		width: 128px;
+		height: 52px;
+		left: 50px;
+		top: 40px;
+		z-index: 4;
+		}
+#equip	{
+		position: absolute;
+		z-index: 4;
+		left: 52%;
+		margin-left: -644px;
+		top: 1507px;
+		}
+#equipImage	{
+		position: absolute;
+		background:url(../images/equip-image.png) no-repeat;
+		margin-top: -400px;
+		left: 130%;
+		width: 762px;
+		height: 592px;
+		z-index: 4;
+		}
+.lineLeft	{
+		position: absolute;
+		background:url(../images/line-image.jpg) no-repeat;
+		margin-top: -65px;
+		left: .5%;
+		width: 58px;
+		height: 7px;
+		z-index: 4;
+		}
+.lineCenter	{
+		position: absolute;
+		background:url(../images/line-image.jpg) no-repeat;
+		margin-top: -90px;
+		left: 43.5%;
+		width: 58px;
+		height: 7px;
+		z-index: 4;
+		}
+#useApp	{
+		position: fixed;
+		background:url(../images/button-embark.png) no-repeat;
+		right: 10px;
+		bottom: 15px;
+		width: 266px;
+		height: 109px;
+		z-index: 5;
+		}
+#useIt	{
+		margin-top: 19px;
+		margin-left: 90px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+		}
+#embark	{
+		margin-top: -15px;
+		margin-left: 90px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30pt;
+		color: #fff;
+		}
+#engage	{
+		position: absolute;
+		z-index: 4;
+		left: 50%;
+		margin-left: -218px;
+		top: 2610px;
+		}
+#engageImage	{
+		position: absolute;
+		background:url(../images/engage-image.png) no-repeat;
+		margin-top: -10px;
+		left: -45%;
+		width: 890px;
+		height: 530px;
+		z-index: 4;
+		}
+#collect	{
+		position: absolute;
+		z-index: 4;
+		right: 50%;
+		margin-right: -497px;
+		top: 4174px;
+		}
+#collectImage	{
+		position: absolute;
+		background:url(../images/collect-image.png) no-repeat;
+		margin-top: -400px;
+		right: 110%;
+		width: 762px;
+		height: 592px;
+		z-index: 4;
+		}
+.lineRight	{
+		position: absolute;
+		background:url(../images/line-image.jpg) no-repeat;
+		margin-top: -65px;
+		right: .5%;
+		width: 58px;
+		height: 7px;
+		z-index: 4;
+		}
+.titleRight		{
+		font-size: 25pt;
+		text-align: right;
+		height: 72px;
+		margin-bottom: 0px;
+		color: #3b8454;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 100%;
+		}
+.readTextRight	{
+		text-align: right;
+		color: #3cb878;
+		margin-bottom: -20px;
+		margin-top: 15px;
+		font-style: initial;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 17pt;
+		}
+#identity	{
+		position: absolute;
+		z-index: 4;
+		left: 50%;
+		margin-left: -237px;
+		top: 5394px;
+		}
+#identityImage	{
+		position: absolute;
+		background:url(../images/identity-image.png) no-repeat;
+		margin-top: -10px;
+		left: -45%;
+		width: 890px;
+		height: 530px;
+		z-index: 4;
+		}
+#understand	{
+		position: absolute;
+		z-index: 4;
+		left: 52%;
+		margin-left: -644px;
+		top: 6842px;
+		}
+#understandImage	{
+		position: absolute;
+		background:url(../images/understand-image.png) no-repeat;
+		margin-top: -400px;
+		left: 130%;
+		width: 762px;
+		height: 592px;
+		z-index: 4;
+		}
+#embarkEnd	{
+		position: absolute;
+		z-index: 4;
+		left: 50%;
+		margin-left: -244px;
+		top: 8428px;
+		}
+.lineEmbark	{
+		position: absolute;
+		background:url(../images/line-image.jpg) no-repeat;
+		margin-top: -63px;
+		left: 43.5%;
+		width: 58px;
+		height: 7px;
+		z-index: 4;
+		}
+.navWords	{
+		text-shadow: 0px 0px 7px #3b8454, 0px 0px 7px #3b8454, 0px 0px 7px #3b8454, 0px 0px 7px #3b8454;
+		font-size: 22pt;
+		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+		}
+#navDiscover	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 72px;
+		top: 135px;
+		z-index: 7;
+		}
+#navEquip	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 75px;
+		top: 240px;
+		z-index: 7;
+		}
+#navEngage	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 152px;
+		top: 332px;
+		z-index: 7;
+		}
+#navCollect	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 116px;
+		top: 423px;
+		z-index: 7;
+		}
+#navIdentity	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 85px;
+		top: 513px;
+		z-index: 7;
+		}
+#navUnderstand	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 90px;
+		top: 595px;
+		z-index: 7;
+		}
+#navEmbark	{
+		position: absolute;
+		text-align: center;
+		width: 300px;
+		left: 96px;
+		top: 674px;
+		z-index: 7;
+		}
+.copWords	{
+		position: absolute;
+		font-size: 10pt;
+		margin-top: -1px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+		}
+#navLogo	{
+		position: absolute;
+		background:url(../images/logo.png) no-repeat;
+		width: 128px;
+		height: 52px;
+		left: 270px;
+		top: 40px;
+		z-index: 7;
+		}
+#navIcon	{
+		position: absolute;
+		background:url(../images/nav-icon.png) no-repeat;
+		width: 40px;
+		height: 65px;
+		left: 117px;
+		top: 128px;
+		z-index: 7;
+		}
