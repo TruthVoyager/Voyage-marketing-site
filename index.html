@@ -16,16 +16,13 @@
             var navButton = document.getElementById('navButton');
             if (mapMenu.style.marginLeft === "-467px") {
                 mapMenu.style.marginLeft = "-8px";
-                navButton.style.background = "url(images/button-menu-pushed.png) no-repeat";
             }
             else {
                 if (mapMenu.style.marginLeft === "-8px") {
                     mapMenu.style.marginLeft = "-467px";
-                    navButton.style.background = "url(images/button-menu.png) no-repeat";
                 }
                 else {
                     mapMenu.style.marginLeft = "-8px";
-                    navButton.style.background = "url(images/button-menu-pushed.png) no-repeat";
                 }
             }
         }
@@ -150,19 +147,19 @@
     <div id="mapMenu">
         <div id="navIcon"></div>
         <div id="navLogo"></div>
-        <div id="navDiscover"><p class="navWords" onclick="smoothScroll(0)">Discover</p></div>
-        <div id="navEquip"><p class="navWords" onclick="smoothScroll(1160)">Equip</p></div>
-        <div id="navEngage"><p class="navWords" onclick="smoothScroll(2552)">Engage</p></div>
-        <div id="navCollect"><p class="navWords" onclick="smoothScroll(3828)">Collect</p></div>
-        <div id="navIdentity"><p class="navWords" onclick="smoothScroll(5336)">Identity</p></div>
-        <div id="navUnderstand"><p class="navWords" onclick="smoothScroll(6496)">Understand</p></div>
-        <div id="navEmbark"><p class="navWords" onclick="smoothScroll(8236)">Embark</p></div>
+        <div id="navDiscover"><p id="disWords" onclick="smoothScroll(0)" onmouseover="disWords.style.color ='#57d1f2'" onmouseout="disWords.style.color ='#fff'">Discover</p></div>
+        <div id="navEquip"><p id="equWords" onclick="smoothScroll(1160)" onmouseover="equWords.style.color ='#57d1f2'" onmouseout="equWords.style.color ='#fff'">Equip</p></div>
+        <div id="navEngage"><p id="engWords" onclick="smoothScroll(2552)" onmouseover="engWords.style.color ='#57d1f2'" onmouseout="engWords.style.color ='#fff'">Engage</p></div>
+        <div id="navCollect"><p id="colWords" onclick="smoothScroll(3828)" onmouseover="colWords.style.color ='#57d1f2'" onmouseout="colWords.style.color ='#fff'">Collect</p></div>
+        <div id="navIdentity"><p id="idWords" onclick="smoothScroll(5336)" onmouseover="idWords.style.color ='#57d1f2'" onmouseout="idWords.style.color ='#fff'">Identity</p></div>
+        <div id="navUnderstand"><p id="undWords" onclick="smoothScroll(6496)" onmouseover="undWords.style.color ='#57d1f2'" onmouseout="undWords.style.color ='#fff'">Understand</p></div>
+        <div id="navEmbark"><p id="embWords" onclick="smoothScroll(8236)" onmouseover="embWords.style.color ='#57d1f2'" onmouseout="embWords.style.color ='#fff'">Embark</p></div>
     </div>
 
-    <div id="useApp">
+    <a id="useApp" href="#" onmouseover="useApp.style.background ='url(images/button-embark-alt.png) no-repeat'" onmouseout="useApp.style.background ='url(images/button-embark.png) no-repeat'">
         <p id="useIt">Use Voyage and</p>
         <p id="embark">Embark</p>
-    </div>
+    </a>
 
     <div id="opening">
         <p class="norm">Welcome to Voyage, help your students</p>
@@ -210,11 +207,11 @@
         <div class="lineEmbark"></div>
     </div>
 
-    <div id="navButton" onclick="menuOpenClose()" class="mapMenu"></div>
+    <div id="navButton" onmouseover="navButton.style.background ='url(images/button-menu-pushed.png) no-repeat'" onmouseout="navButton.style.background ='url(images/button-menu.png) no-repeat'" onclick="menuOpenClose()" class="mapMenu"></div>
 
-    <div id="scrollDown" onclick="smoothScroll(1160)"></div>
+    <div id="scrollDown" onmouseover="scrollDown.style.background ='url(images/button-down-pressed.png) no-repeat'" onmouseout="scrollDown.style.background ='url(images/button-down.png) no-repeat'" onclick="smoothScroll(1160)"></div>
 
-    <div id="logo"></div>
+    <div id="logo" onclick="smoothScroll(0)"></div>
 
     <div id="screen"></div>
 
