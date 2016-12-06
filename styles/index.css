@@ -375,3 +375,9 @@ h1		{
 		top: 128px;
 		z-index: 7;
 		}
+#navCopy    {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        top: 9000px;
+        }
