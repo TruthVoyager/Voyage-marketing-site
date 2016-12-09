@@ -228,6 +228,23 @@
                     leftZoom[i].style.mozTransform = "scale(" + innerWidth/1300 + ")";
                 }
             }
+            else {
+                for (i = 0; i < infoZoom.length; i++) {
+                    infoZoom[i].style.msTransform = "scale(1)";
+                    infoZoom[i].style.webkitTransform = "scale(1)";
+                    infoZoom[i].style.mozTransform = "scale(1)";
+                }
+                for (i = 0; i < rightZoom.length; i++) {
+                    rightZoom[i].style.msTransform = "scale(1)";
+                    rightZoom[i].style.webkitTransform = "scale(1)";
+                    rightZoom[i].style.mozTransform = "scale(1)";
+                }
+                for (i = 0; i < leftZoom.length; i++) {
+                    leftZoom[i].style.msTransform = "scale(1)";
+                    leftZoom[i].style.webkitTransform = "scale(1)";
+                    leftZoom[i].style.mozTransform = "scale(1)";
+                }
+            }
         }
         
         window.addEventListener("scroll", parallax, false);
@@ -236,10 +253,13 @@
         window.addEventListener("resize", menuScale, false);
         window.addEventListener("resize", responceOne, false);
         window.addEventListener("resize", infoScale, false);
+        window.addEventListener("scroll", menuScale, false);
+        window.addEventListener("scroll", responceOne, false);
+        window.addEventListener("scroll", infoScale, false);
         
     </script>
 </head>
-<body onload="responceOne(), menuScale()">
+<body onload="responceOne(), menuScale(), infoScale()">
     <div id="mapMenu">
         <div id="navIcon"></div>
         <div id="navLogo"></div>
