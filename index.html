@@ -7,7 +7,6 @@
     <link href="styles/index.css" rel="stylesheet">
     <script>
         function parallax() {
-            console.log(window.pageYOffset);
             var map = document.getElementById('map');
             map.style.top = -(window.pageYOffset / 10) + 'px';
         }
@@ -137,13 +136,110 @@
                 }
             }
         }
+        
+        function responceOne() {
+            var equipLength = -582;
+            var equipImageLength = -582;
+            var collectLength = -582;
+            var collectImageLength = -582;
+            var understandLength = -582;
+            var understandImageLength = -582;
 
+            if (innerWidth <= 1300) {
+                equipLength = (document.getElementById('equip').clientWidth * -1.2);
+                equipImageLength = (document.getElementById('equipImage').clientWidth * -.93);
+
+                collectLength = document.getElementById('collect').clientWidth * -1.25;
+                collectImageLength = document.getElementById('collectImage').clientWidth * -.87;
+
+                understandLength = document.getElementById('understand').clientWidth * -1.17;
+                understandImageLength = document.getElementById('understandImage').clientWidth * -.93;
+            }
+            else {
+                equipLength = -582;
+                equipImageLength = -677;
+
+                collectLength = -612;
+                collectImageLength = -585;
+
+                understandLength = -582;
+                understandImageLength = -680;
+            }
+
+            
+            if (innerWidth <= 1500){
+                equip.style.left = "50%";
+                equip.style.marginLeft = "" + equipLength + "px";
+                equipImage.style.right = "50%";
+                equipImage.style.marginRight = "" + equipImageLength + "px";
+                                
+                collectImage.style.left = "50%";
+                collectImage.style.marginLeft = "" + collectImageLength + "px";
+                collect.style.right = "50%";
+                collect.style.marginRight = "" + collectLength + "px";
+                
+                understand.style.left = "50%";
+                understand.style.marginLeft = "" + understandLength + "px";
+                understandImage.style.right = "50%";
+                understandImage.style.marginRight = "" + understandImageLength + "px";
+            }
+            else{
+                equip.style.left = "160px";
+                equip.style.marginLeft = "0px";
+                equipImage.style.right = "65px";
+                equipImage.style.marginRight = "0px";
+                
+                collectImage.style.left = "130px";
+                collectImage.style.marginLeft = "0px";
+                collect.style.right = "160px";
+                collect.style.marginRight = "0px";
+                
+                understand.style.left = "160px";
+                understand.style.marginLeft = "0px";
+                understandImage.style.right = "65px";
+                understandImage.style.marginRight = "0px";
+            }
+        }
+        
+        function menuScale() {
+            console.log("height " + innerHeight);
+            mapMenu.style.zoom = innerHeight/794;
+        }
+        
+        function infoScale() {
+            console.log("width = " + innerWidth);
+            var infoZoom = document.getElementsByClassName('infoZoom');
+            var rightZoom = document.getElementsByClassName('rightZoom');
+            var leftZoom = document.getElementsByClassName('leftZoom');
+            if (innerWidth <= 1300) {
+                for (i=0; i<infoZoom.length; i++){
+                    infoZoom[i].style.msTransform = "scale(" + innerWidth/1300 + ")";
+                    infoZoom[i].style.webkitTransform = "scale(" + innerWidth/1300 + ")";
+                    infoZoom[i].style.mozTransform = "scale(" + innerWidth/1300 + ")";
+                }
+                for (i=0; i<rightZoom.length; i++){
+                    rightZoom[i].style.msTransform = "scale(" + innerWidth/1300 + ")";
+                    rightZoom[i].style.webkitTransform = "scale(" + innerWidth/1300 + ")";
+                    rightZoom[i].style.mozTransform = "scale(" + innerWidth/1300 + ")";
+                }
+                for (i=0; i<leftZoom.length; i++){
+                    leftZoom[i].style.msTransform = "scale(" + innerWidth/1300 + ")";
+                    leftZoom[i].style.webkitTransform = "scale(" + innerWidth/1300 + ")";
+                    leftZoom[i].style.mozTransform = "scale(" + innerWidth/1300 + ")";
+                }
+            }
+        }
+        
         window.addEventListener("scroll", parallax, false);
         window.addEventListener("scroll", embarkShift, false);
         window.addEventListener("scroll", navShift, false);
+        window.addEventListener("resize", menuScale, false);
+        window.addEventListener("resize", responceOne, false);
+        window.addEventListener("resize", infoScale, false);
+        
     </script>
 </head>
-<body>
+<body onload="responceOne(), menuScale()">
     <div id="mapMenu">
         <div id="navIcon"></div>
         <div id="navLogo"></div>
@@ -161,47 +257,47 @@
         <p id="embark">Embark</p>
     </a>
 
-    <div id="opening">
+    <div class="infoZoom" id="opening">
         <p class="norm">Welcome to Voyage, help your students</p>
         <h1>Discover Themselves & <br>Understand Others</h1>
     </div>
 
-    <div id="equip">
+    <div class="leftZoom" id="equip">
         <h2 class="titleLeft">Equip</h2>
         <p class="readTextLeft">Provide digestible ideological structures for <br>your students to explore and engage with.</p>
-        <div id="equipImage"></div>
         <div class="lineLeft"></div>
     </div>
+    <div class="rightZoom" id="equipImage"></div>
 
-    <div id="engage">
+    <div class="infoZoom" id="engage">
         <h2 class="titleCenter">Engage</h2>
         <p class="readTextCenter">Students explore by determining how much <br>they agree or disagree with each point <br>within a structure.</p>
         <div id="engageImage"></div>
         <div class="lineCenter"></div>
     </div>
 
-    <div id="collect">
+    <div class="rightZoom" id="collect">
         <h2 class="titleRight">Collect</h2>
-        <p class="readTextRight">Students can revisit structures they <br>have explored through their profile.</p>
-        <div id="collectImage"></div>
+        <p class="readTextRight">Students can revisit structures they have <br>explored through their profile.</p>
         <div class="lineRight"></div>
     </div>
+    <div class="leftZoom" id="collectImage"></div>
 
-    <div id="identity">
+    <div class="infoZoom" id="identity">
         <h2 class="titleCenter">Identity</h2>
         <p class="readTextCenter">Students can establish their identity by creating <br>their own structures to represent their <br>personal ideologies and values.</p>
         <div id="identityImage"></div>
         <div class="lineCenter"></div>
     </div>
 
-    <div id="understand">
+    <div class="leftZoom" id="understand">
         <h2 class="titleLeft">Understand</h2>
         <p class="readTextLeft">Students can better understand one <br>another by exploring each other’s structures.</p>
-        <div id="understandImage"></div>
         <div class="lineLeft"></div>
     </div>
+    <div class="rightZoom" id="understandImage"></div>
 
-    <div id="embarkEnd">
+    <div class="infoZoom" id="embarkEnd">
         <h2 class="titleCenter">Embark</h2>
         <p class="readTextCenter">Acquire the Voyage app and allow your students <br>to embark on a life enriching journey.</p>
         <div class="lineEmbark"></div>
